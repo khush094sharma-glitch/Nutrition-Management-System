@@ -1,0 +1,12 @@
+import csv
+
+nut=[
+     ["FOOD", "CALORIES", "CARBS (g)", "FATS (g)", "PROTEIN (g)", "SUGAR (g)"],
+     ["RICE", 130, 28, 0.3, 2.7, 0.1],
+     ["DAL", 120, 16, 3, 9,0.2]]
+
+with open("NUTRITION_DATA.csv", "w", newline="") as file:
+    writer= csv.writer(file)
+    writer.writerows(nut)
+    
+print("done")
