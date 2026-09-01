@@ -11,7 +11,7 @@ def connect_database():
     return mysql.connector.connect(
         host="localhost",
         user="root",
-        password="my!dogs$eats9bones",
+        password="database_password",
         database="nutrition_db"
     )
 

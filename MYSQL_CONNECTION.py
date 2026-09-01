@@ -4,7 +4,7 @@ import mysql.connector
 conn = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="my!dogs$eats9bones"
+    password="database_password"
 )
 cursor = conn.cursor()
 cursor.execute("CREATE DATABASE IF NOT EXISTS nutrition_db;")
